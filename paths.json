@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/content/unidemo/:/",
-    "/content/unidemo/configuration:/.helix/config.json",
-    "/content/unidemo/metadata:/metadata.json"
+    "/content/dxdmc/:/",
+    "/content/dxdmc/configuration:/.helix/config.json",
+    "/content/dxdmc/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/unidemo/"
+    "/content/dxdmc/"
   ]
 }
