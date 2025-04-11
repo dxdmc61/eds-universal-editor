@@ -255,10 +255,12 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
-
+#car-features{
+	display:none;
+}
 #car-features + ul {
   display: flex;
-  gap: 16px; /* spacing between items */
+  gap: 80px; /* spacing between items */
   list-style: none;
   padding: 0;
   margin: 0;
