@@ -1,29 +1,5 @@
 [
   {
-    "id": "page-metadata",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "jcr:title",
-        "label": "Title"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "jcr:description",
-        "label": "Description"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "keywords",
-        "multi": true,
-        "label": "Keywords"
-      }
-    ]
-  },
-  {
     "id": "image",
     "fields": [
       {
@@ -209,6 +185,78 @@
       {
         "component": "richtext",
         "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "image-carousel",
+    "fields": [
+      {
+        "name": "multiselect",
+        "type":"multiselect",
+        "label": "Options",
+        "options": [
+          {
+            "name": "Auto Scroll",
+            "value": "auto-scroll"
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "id": "wipro-carousel",
+    "fields": [
+      {
+        "name": "multiselect",
+        "type":"multiselect",
+        "label": "Options",
+        "options": [
+          {
+            "name": "Auto Scroll",
+            "value": "auto-scroll"
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "id": "myslider",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string[]",
+        "name": "imageSLider",
+        "label": "ImageSlider",
+        "multi": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "carouselCard",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "carouselCardImage",
+        "label": "Carousel Card Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "carouselCardText",
         "value": "",
         "label": "Text",
         "valueType": "string"

@@ -15,7 +15,16 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "myslider",
+      "image-carousel",
+      "wipro-carousel"
+    ]
+  },
+  {
+    "id": "wipro-carousel",
+    "components": [
+      "carouselCard"
     ]
   },
   {
@@ -37,6 +46,12 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "image-carousel",
+    "components": [
+      "image"
     ]
   }
 ]
