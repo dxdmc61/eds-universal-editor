@@ -34,7 +34,7 @@ export default function decorate(block) {
     block.appendChild(msgDiv);
 
     // IMS OAuth2 settings
-    const clientId = '4cd6060b778949e0a04123432d5bb6db';
+    const clientId = 'c7255c321071463f8a963cd8cb6e1081';
     const redirectUri = `${window.location.origin}/auth/callback`;
     const imsAuthUrl = `https://ims-na1.adobelogin.com/ims/authorize?client_id=${clientId}&scope=openid,AdobeID,user_management_sdk&response_type=token&redirect_uri=${encodeURIComponent(redirectUri)}`;
 
