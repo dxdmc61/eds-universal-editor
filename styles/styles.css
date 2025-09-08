@@ -255,9 +255,11 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
 #car-features{
 	display:none;
 }
+
 #car-features + ul {
   display: flex;
   gap: 80px; /* spacing between items */
