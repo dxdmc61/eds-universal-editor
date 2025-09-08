@@ -1,5 +1,5 @@
 export default function decorate(block) {
-    if (!window.location.href.includes("author-")) {
+    if (!window.location.href.includes('author-')) {
       // Read config from block (labels etc.)
       const usernameLabel = block.querySelector('div:nth-child(1)')?.textContent || 'Username';
       const passwordLabel = block.querySelector('div:nth-child(2)')?.textContent || 'Password';
