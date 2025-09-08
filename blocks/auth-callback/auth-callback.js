@@ -6,7 +6,9 @@ export default function decorate(block) {
     if (token) {
       localStorage.setItem('ims_token', token);
       block.innerHTML = '<p>Login successful! Redirecting...</p>';
-      setTimeout(() => window.location.href = '/', 1000);
+      setTimeout(() => {
+        window.location.href = '/';
+      }, 1000);
     } else {
       block.innerHTML = '<p>Login failed. Please try again.</p>';
     }
