@@ -1,5 +1,4 @@
 export default function decorate(block) {
-  debugger;
   if (!window.location.href.includes('author-')) {
     // Create a wrapper div for the carousel
     const carouselWrapper = document.createElement('div');
@@ -59,7 +58,8 @@ export default function decorate(block) {
     let currentSlide = 0;
     const totalSlides = carouselSlides.children.length;
 
-    function showSlide(index) {
+    // Function expression (arrow function) to fix ESLint no-inner-declarations
+    const showSlide = (index) => {
       if (index < 0) {
         currentSlide = totalSlides - 1; // Loop back to last slide
       } else if (index >= totalSlides) {
@@ -70,7 +70,7 @@ export default function decorate(block) {
 
       // Apply transform for sliding effect
       carouselSlides.style.transform = `translateX(-${currentSlide * 100}%)`;
-    }
+    };
 
     // Button event listeners
     prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));

@@ -224,45 +224,6 @@
       }
     ]
   },
-
-  {
-    "id": "myslider",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string[]",
-        "name": "imageSLider",
-        "label": "ImageSlider",
-        "multi": true
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageAlt",
-        "label": "Alt",
-        "value": ""
-      }
-    ]
-  },
-  {
-    "id": "carouselCard",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "carouselCardImage",
-        "label": "Carousel Card Image",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "carouselCardText",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
   {
     "id": "login",
     "fields": [
@@ -285,6 +246,5 @@
         "value": "Login"
       }
     ]
-  }
-  
+  }  
 ]
