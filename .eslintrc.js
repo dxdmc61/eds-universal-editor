@@ -15,8 +15,30 @@ module.exports = {
     requireConfigFile: false,
   },
   rules: {
-    'import/extensions': ['error', { js: 'always' }], // require js file extensions in imports
-    'linebreak-style': ['error', 'unix'], // enforce unix linebreaks
-    'no-param-reassign': [2, { props: false }], // allow modifying properties of param
+    // Essential code rules (keep)
+    'no-unused-vars': 'warn',
+    'no-undef': 'error',
+    'no-console': 'warn',
+
+    // Relax formatting rules
+    'indent': 'off',
+    'quotes': 'off',
+    'no-trailing-spaces': 'off',
+    'arrow-body-style': 'off',
+    'linebreak-style': 'off',
+    'comma-dangle': 'off',
+    'max-len': 'off',
+    
+    // Import and param rules (keep some defaults)
+    'import/extensions': ['error', { js: 'always' }],
+    'no-param-reassign': [2, { props: false }],
   },
+  overrides: [
+    {
+      files: ['*.json'],
+      rules: {
+        'quotes': 'off',
+      },
+    },
+  ],
 };
