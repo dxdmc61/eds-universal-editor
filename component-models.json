@@ -262,5 +262,29 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "login",
+    "fields": [
+      {
+        "component": "text",
+        "name": "usernameLabel",
+        "label": "Username Label",
+        "value": "Username"
+      },
+      {
+        "component": "text",
+        "name": "passwordLabel",
+        "label": "Password Label",
+        "value": "Password"
+      },
+      {
+        "component": "text",
+        "name": "buttonLabel",
+        "label": "Button Label",
+        "value": "Login"
+      }
+    ]
   }
+  
 ]
