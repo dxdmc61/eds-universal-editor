@@ -157,7 +157,7 @@ button {
 a:any-link {
   color: var(--link-color);
   text-decoration: none;
-  word-break: break-word;
+  overflow-wrap: break-word; /* replace deprecated word-break value */
 }
 
 a:hover {
@@ -255,9 +255,11 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
 #car-features{
 	display:none;
 }
+
 #car-features + ul {
   display: flex;
   gap: 80px; /* spacing between items */

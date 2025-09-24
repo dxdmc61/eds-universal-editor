@@ -1,9 +1,9 @@
 export default function decorate(block) {
   if (!window.location.href.includes('author-')) {
   // Read config from block (labels etc.)
-    const usernameLabel = block.querySelector('div:nth-child(1)')?.textContent || 'Username';
-    const passwordLabel = block.querySelector('div:nth-child(2)')?.textContent || 'Password';
-    const buttonLabel = block.querySelector('div:nth-child(3)')?.textContent || 'Login';
+    const usernameLabel = 'Username';
+    const passwordLabel = 'Password';
+    const buttonLabel = 'Login';
 
     // Clear existing content
     block.innerHTML = '';
@@ -34,7 +34,7 @@ export default function decorate(block) {
     block.appendChild(msgDiv);
 
     // IMS OAuth2 settings
-    const clientId = 'YOUR_IMS_CLIENT_ID';
+    const clientId = 'c7255c321071463f8a963cd8cb6e1081';
     const redirectUri = `${window.location.origin}/auth/callback`;
     const imsAuthUrl = `https://ims-na1.adobelogin.com/ims/authorize?client_id=${clientId}&scope=openid,AdobeID,user_management_sdk&response_type=token&redirect_uri=${encodeURIComponent(redirectUri)}`;
 
