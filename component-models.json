@@ -246,5 +246,66 @@
         "value": "Login"
       }
     ]
+  },
+  {
+    "id": "registration",
+    "fields": [
+      {
+        "component": "select",
+        "name": "accountType",
+        "label": "Account Type",
+        "options": [
+          { "name": "Retailer/Partner", "value": "retailer" },
+          { "name": "Agency/Vendor Partner", "value": "agency" },
+          { "name": "Employee", "value": "employee" }
+        ]
+      },
+      {
+        "component": "text",
+        "name": "firstName",
+        "label": "First Name"
+      },
+      {
+        "component": "text",
+        "name": "lastName",
+        "label": "Last Name"
+      },
+      {
+        "component": "text",
+        "name": "email",
+        "label": "Email"
+      },
+      {
+        "component": "text",
+        "name": "companyName",
+        "label": "Company Name"
+      },
+      {
+        "component": "text",
+        "name": "website",
+        "label": "Website"
+      },
+      {
+        "component": "text",
+        "name": "salesRep",
+        "label": "Sales Representative"
+      },
+      {
+        "component": "text",
+        "name": "brands",
+        "label": "Brands We Represent"
+      },
+      {
+        "component": "text",
+        "name": "captcha",
+        "label": "Security Check (CAPTCHA)"
+      },
+      {
+        "component": "text",
+        "name": "buttonLabel",
+        "label": "Button Label",
+        "value": "Register"
+      }
+    ]
   }  
 ]
